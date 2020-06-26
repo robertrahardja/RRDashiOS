@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RRDashMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-Y1-uwK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RRDash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7O-RD-83h">
+                                        <rect key="frame" x="20" y="95" width="374" height="67"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="49"/>
+                                        <color key="textColor" red="0.90980392156862744" green="0.24705882352941178" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Robert Rahardja " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VE-My-4n2">
+                                        <rect key="frame" x="20" y="182" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ai-51-23Y">
+                                        <rect key="frame" x="15" y="725" width="384" height="33"/>
+                                        <color key="backgroundColor" red="0.30588235294117649" green="0.69019607843137254" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Login with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-zT-bXp">
+                                        <rect key="frame" x="101" y="768" width="212" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="212" id="ct2-1b-riY"/>
+                                            <constraint firstAttribute="height" constant="50" id="v1B-4h-8w9"/>
+                                        </constraints>
+                                        <state key="normal" title="USE DIFFERENT ACCOUNT"/>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-ir-Til">
+                                        <rect key="frame" x="15" y="669" width="384" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Customer"/>
+                                            <segment title="Driver"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.90980392160000001" green="0.2470588235" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </segmentedControl>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" translatesAutoresizingMaskIntoConstraints="NO" id="emz-A9-lvS">
+                                        <rect key="frame" x="127" y="539" width="160" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="uwI-td-nc4"/>
+                                            <constraint firstAttribute="height" constant="85" id="zBq-yR-9mY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9ai-51-23Y" secondAttribute="trailing" constant="15" id="1Kf-wW-yg7"/>
+                                    <constraint firstItem="ueW-ir-Til" firstAttribute="top" secondItem="emz-A9-lvS" secondAttribute="bottom" constant="45" id="1rL-n2-xp3"/>
+                                    <constraint firstItem="emz-A9-lvS" firstAttribute="centerX" secondItem="YXM-Y1-uwK" secondAttribute="centerX" id="4NE-A6-xzi"/>
+                                    <constraint firstItem="ueW-ir-Til" firstAttribute="leading" secondItem="YXM-Y1-uwK" secondAttribute="leading" constant="15" id="B52-zc-gPS"/>
+                                    <constraint firstItem="LXK-zT-bXp" firstAttribute="centerX" secondItem="YXM-Y1-uwK" secondAttribute="centerX" id="DM4-Bk-BKQ"/>
+                                    <constraint firstItem="Y7O-RD-83h" firstAttribute="leading" secondItem="YXM-Y1-uwK" secondAttribute="leading" constant="20" id="Hue-Vg-wOO"/>
+                                    <constraint firstItem="3VE-My-4n2" firstAttribute="leading" secondItem="YXM-Y1-uwK" secondAttribute="leading" constant="20" id="KL0-wh-Pdz"/>
+                                    <constraint firstItem="LXK-zT-bXp" firstAttribute="top" secondItem="9ai-51-23Y" secondAttribute="bottom" constant="10" id="LrV-ZP-hP7"/>
+                                    <constraint firstAttribute="bottom" secondItem="9ai-51-23Y" secondAttribute="bottom" constant="60" id="Ygr-0I-0or"/>
+                                    <constraint firstAttribute="trailing" secondItem="ueW-ir-Til" secondAttribute="trailing" constant="15" id="ZDo-q4-ZNI"/>
+                                    <constraint firstAttribute="trailing" secondItem="3VE-My-4n2" secondAttribute="trailing" constant="20" id="ZiB-Ob-vAq"/>
+                                    <constraint firstItem="3VE-My-4n2" firstAttribute="top" secondItem="Y7O-RD-83h" secondAttribute="bottom" constant="20" id="pB6-Lw-GMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y7O-RD-83h" secondAttribute="trailing" constant="20" id="sbm-n2-wvt"/>
+                                    <constraint firstItem="9ai-51-23Y" firstAttribute="top" secondItem="ueW-ir-Til" secondAttribute="bottom" constant="25" id="tN2-dY-Pid"/>
+                                    <constraint firstItem="Y7O-RD-83h" firstAttribute="top" secondItem="YXM-Y1-uwK" secondAttribute="top" constant="95" id="tdn-E1-DF9"/>
+                                    <constraint firstItem="9ai-51-23Y" firstAttribute="leading" secondItem="YXM-Y1-uwK" secondAttribute="leading" constant="15" id="y5C-76-joh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXM-Y1-uwK" secondAttribute="trailing" id="MOD-Jw-DmM"/>
+                            <constraint firstItem="YXM-Y1-uwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NBE-u5-VmJ"/>
+                            <constraint firstItem="YXM-Y1-uwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nr0-Ua-1cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXM-Y1-uwK" secondAttribute="bottom" id="dVj-qm-Ivg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="124"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash_screen" width="185" height="110"/>
+    </resources>
 </document>
